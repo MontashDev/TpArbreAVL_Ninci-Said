@@ -1,21 +1,13 @@
 package com.company;
 
-public class Node {
-    protected int value;
-    protected int height;
-    protected Node leftSon;
-    protected Node rightSon;
+public class Node extends AVLTree {
+    int value, height;
+    Node leftSon, rightSon;
 
-    Node(int value, int height){
-        this.value=value;
-        this.height=height;
-        leftSon=null;
-        rightSon=null;
+    public Node(int value) {
+        leftSon = null;
+        rightSon = null;
+        this.value = value;
+        this.height = 1;
     }
-
-    public int getHeight() {
-        return height;
-    }
-
-
 }
